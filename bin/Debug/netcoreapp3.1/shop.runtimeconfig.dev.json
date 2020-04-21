@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\packetspy\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\packetspy\\.nuget\\packages"
+    ]
+  }
+}
