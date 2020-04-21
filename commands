@@ -1,0 +1,12 @@
+
+#: dotnet ef migrations add InitialCreate
+#: dotnet ef migrations add Update Password
+
+#: dotnet ef database update
+
+
+#: dotnet add package Microsoft.EntityFrameworkCore.Design
+#: dotnet add package Microsoft.EntityFrameworkCore.InMemory
+#: dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+#: dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+#: dotnet add package Swashbuckle.AspNetCore
