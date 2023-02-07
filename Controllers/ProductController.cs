@@ -64,6 +64,20 @@ namespace Shop.Controllers
             return Ok(products);
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("qlqcoisa/publicId:int")]
+        public async Task<ActionResult<List<Product>>> GetByCategory([FromServices] DataContext context, int id)
+        {
+            var products = await context.Products
+            .Include(x => x.Category)
+            .AsNoTracking()
+            .Where(x => x.Category.Id == id)
+            .ToListAsync();
+
+            return Ok(products);
+        }
+
         [HttpPost]
         [Authorize(Roles = "employee")]
         public async Task<ActionResult<Product>> Post([FromBody] Product model, [FromServices] DataContext context)
